@@ -1,0 +1,38 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: "Outfit", sans-serif;
+}
+
+.custom-shadow {
+  filter: drop-shadow(8px 8px 1px #ffbe99);
+}
+
+.custom-shadow-black {
+  filter: drop-shadow(6px 6px 2px #1e1e1e);
+}
+
+.custom-shadow-button {
+  filter: drop-shadow(4px 4px 2px #1e1e1e);
+}
+
+.slick-slide {
+  padding: 0px 10px 10px 0px;
+}
+
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  text-indent: 1px;
+  text-overflow: "";
+}
+
+@media (min-width: 1280px) {
+  .slick-slide {
+    padding: 30px;
+  }
+}
