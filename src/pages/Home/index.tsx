@@ -11,7 +11,7 @@ import {
 } from "@phosphor-icons/react";
 import Collapse from "@/components/elements/Collapse";
 import Navigate from "@/components/elements/Navigate";
-import Footer from "@/components/ui/footer";
+import Footer from "@/components/ui/Footer";
 import Hero from "./hero";
 import Testimony from "./testimony";
 
