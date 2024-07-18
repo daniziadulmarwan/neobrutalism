@@ -14,7 +14,7 @@ import {
 } from "@phosphor-icons/react";
 import TextInput from "@/components/atoms/TextInput";
 import SelectInput from "@/components/atoms/SelectInput";
-import Footer from "@/components/ui/Footer";
+import Footer from "@/components/ui/footer";
 import ContactIconCard from "@/components/atoms/ContactIconCard";
 
 export default function Contact() {

@@ -1,8 +1,11 @@
 import Brand from "@/assets/brand.png";
+import NavbarMobile from "@/components/ui/navbar-mobile";
 import { TextAlignRight } from "@phosphor-icons/react";
+import { useState } from "react";
 import { useLocation } from "react-router-dom";
 
 const Navbar = () => {
+  const [open, setOpen] = useState<boolean>(false);
   const location = useLocation();
 
   return (
@@ -26,9 +29,13 @@ const Navbar = () => {
 
         <div className="flex items-center justify-between">
           <div className="block xl:hidden border-l-2 border-x-secondary-400 h-full px-7 bg-primary-200">
-            <button className="grid place-items-center w-full h-full">
+            <button
+              className="grid place-items-center w-full h-full"
+              onClick={() => setOpen(true)}
+            >
               <TextAlignRight size={32} />
             </button>
+            <NavbarMobile open={open} setOpen={setOpen} />
           </div>
 
           <div className="hidden xl:block">
