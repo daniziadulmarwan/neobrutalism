@@ -1,4 +1,3 @@
-import { ChartPieSlice } from "@phosphor-icons/react";
 import { ReactElement } from "react";
 
 type Props = {
