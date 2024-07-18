@@ -25,10 +25,7 @@ export default function Contact() {
         <Navbar />
 
         {/* Connect With Us */}
-        <section
-          id="connect-with-us"
-          className="mt-[60px] custom-shadow-black "
-        >
+        <section id="connect-with-us" className="mt-[60px] custom-shadow-black">
           <div className="border-2 border-secondary-600 rounded-xl w-full h-auto xl:h-[594px] bg-white relative flex flex-col xl:flex-row items-center px-[30px] xl:px-[120px] py-[50px] xl:py-0">
             {/* Start: Abstract */}
             <div>
@@ -59,7 +56,7 @@ export default function Contact() {
                 inquiries. Feel free to reach out to us through any of the
                 following contact methods
               </p>
-              <div className="mt-[50px] grid grid-cols-1 xl:grid-cols-2 gap-5 xl:gap-6">
+              <div className="mt-[30px] xl:mt-[50px] grid grid-cols-1 xl:grid-cols-2 gap-5 xl:gap-6">
                 <ContactCard
                   icon={<Envelope size={24} />}
                   title="hello@littlelearners.com"

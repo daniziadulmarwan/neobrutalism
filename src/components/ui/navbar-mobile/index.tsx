@@ -8,7 +8,7 @@ type Props = {
 export default function NavbarMobile(props: Props) {
   return (
     <div
-      className={`fixed bg-primary-400/90 z-50 transition-all duration-300 ease-in-out ${
+      className={`fixed bg-primary-400/90 z-50 w-screen h-screen overflow-hidden transition-all duration-300 ease-in-out ${
         props.open ? "inset-0" : "hidden"
       }`}
     >

@@ -50,15 +50,16 @@ const Collapse = (props: CollapseType) => {
           </div>
           {/* End: Icon */}
         </div>
+
         {isOpen && (
-          <div className="pl-10 pr-28 -mt-2">
+          <div className="px-6 xl:pl-10 pr-28 -mt-2">
             <hr className="border border-secondary-600 w-full" />
           </div>
         )}
 
         {/* Body */}
         <div className="body overflow-hidden transition-all duration-300 ease-in-out">
-          <p className="font-medium text-base xl:text-xl text-secondary-400 px-10 pb-5 mt-6">
+          <p className="font-medium text-base xl:text-xl text-secondary-400 px-6 xl:px-10 pb-5 mt-6">
             {props.children}
           </p>
         </div>
