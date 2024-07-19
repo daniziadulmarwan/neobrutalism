@@ -100,7 +100,7 @@ function Achievement() {
         <div className="mt-[30px] xl:mt-[50px] flex justify-between items-center">
           <Link
             to="#"
-            className="font-raleway text-[22px] font-bold text-secondary-500"
+            className="font-raleway text-lg xl:text-[22px] font-bold text-secondary-500"
           >
             8 More Awards
           </Link>
@@ -108,16 +108,16 @@ function Achievement() {
           <div className="flex gap-5">
             <button
               type="button"
-              className="w-14 h-14 border-2 border-secondary-600 rounded-[8px] bg-white grid place-items-center cursor-pointer"
+              className="w-12 xl:w-14 h-12 xl:h-14 border-2 border-secondary-600 rounded-[8px] bg-white grid place-items-center cursor-pointer"
               onClick={() => slider?.current?.slickPrev()}
             >
-              <ArrowLeft size={30} />
+              <ArrowLeft className="w-5 h-5 xl:w-[30px] xl:h-[30px]" />
             </button>
             <button
-              className="w-14 h-14 border-2 border-secondary-600 rounded-[8px] bg-white grid place-items-center cursor-pointer"
+              className="w-12 xl:w-14 h-12 xl:h-14 border-2 border-secondary-600 rounded-[8px] bg-white grid place-items-center cursor-pointer"
               onClick={() => slider?.current?.slickNext()}
             >
-              <ArrowRight size={30} />
+              <ArrowRight className="w-5 h-5 xl:w-[30px] xl:h-[30px]" />
             </button>
           </div>
         </div>
