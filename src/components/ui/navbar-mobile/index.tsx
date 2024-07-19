@@ -33,19 +33,19 @@ export default function NavbarMobile(props: Props) {
           About Us
         </a>
         <a
-          href="#"
+          href="/academic"
           className={`text-[#262626] text-base font-medium py-6 px-8 h-full cursor-pointer`}
         >
           Academics
         </a>
         <a
-          href="#"
+          href="/admission"
           className="text-[#262626] text-base font-medium py-6 px-8 h-full cursor-pointer"
         >
           Admissions
         </a>
         <a
-          href="#"
+          href="/student-life"
           className="text-[#262626] text-base font-medium py-6 px-8 h-full cursor-pointer"
         >
           Student Life

@@ -56,20 +56,26 @@ const Navbar = () => {
               About Us
             </a>
             <a
-              href="#"
-              className={`text-[#262626] text-xl font-medium py-6 px-8 border-r-2 border-[#262626] border-y-0 h-full hover:bg-primary-200 cursor-pointer`}
+              href="/academic"
+              className={`text-[#262626] text-xl font-medium py-6 px-8 border-r-2 border-[#262626] border-y-0 h-full hover:bg-primary-200 cursor-pointer ${
+                location.pathname == "/academic" ? "bg-primary-200" : ""
+              }`}
             >
               Academics
             </a>
             <a
-              href="#"
-              className="text-[#262626] text-xl font-medium py-6 px-8 border-r-2 border-[#262626] border-y-0 h-full hover:bg-primary-200 cursor-pointer"
+              href="/admission"
+              className={`text-[#262626] text-xl font-medium py-6 px-8 border-r-2 border-[#262626] border-y-0 h-full hover:bg-primary-200 cursor-pointer ${
+                location.pathname == "/admission" ? "bg-primary-200" : ""
+              }`}
             >
               Admissions
             </a>
             <a
-              href="#"
-              className="text-[#262626] text-xl font-medium py-6 px-8 border-r-2 border-[#262626] border-y-0 h-full hover:bg-primary-200 cursor-pointer"
+              href="/student-life"
+              className={`text-[#262626] text-xl font-medium py-6 px-8 border-r-2 border-[#262626] border-y-0 h-full hover:bg-primary-200 cursor-pointer ${
+                location.pathname == "/student-life" ? "bg-primary-200" : ""
+              }`}
             >
               Student Life
             </a>
