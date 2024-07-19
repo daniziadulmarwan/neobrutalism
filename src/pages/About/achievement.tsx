@@ -7,10 +7,52 @@ import {
   Lightning,
 } from "@phosphor-icons/react";
 import { Link } from "react-router-dom";
+import Slider from "react-slick";
+
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+import { useRef } from "react";
 
 function Achievement() {
+  const slider = useRef<any>(null);
+
+  const settings = {
+    dots: false,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    arrows: false,
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 3,
+          infinite: true,
+          dots: false,
+        },
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          initialSlide: 2,
+        },
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        },
+      },
+    ],
+  };
+
   return (
-    <section id="achievements" className="mt-[200px]">
+    <section id="achievements" className="mt-20 xl:mt-[200px]">
       {/* Header */}
       <div className="text-center">
         <div className="text-sm xl:text-lg border-2 border-secondary-600 rounded-[8px] bg-white inline-flex px-5 py-[10px]">
@@ -33,8 +75,8 @@ function Achievement() {
       </div>
 
       {/* Body */}
-      <div className="mt-[100px]">
-        <div className="grid grid-cols-3 gap-10">
+      <div id="achievement-slider" className="mt-[50px] xl:mt-[100px]">
+        <Slider {...settings} ref={slider} className="flex gap-10">
           <AchivementCard
             id={1}
             title="Outstanding Early Childhood Education Award"
@@ -53,9 +95,9 @@ function Achievement() {
             desc="Received from the Green Earth Society for our dedication to environmental education, sustainable practices, and fostering a love for nature in our students."
             icon={<Lightning className="w-6 h-6 xl:w-[34px] xl:h-[34px]" />}
           />
-        </div>
+        </Slider>
 
-        <div className="mt-[50px] flex justify-between items-center">
+        <div className="mt-[30px] xl:mt-[50px] flex justify-between items-center">
           <Link
             to="#"
             className="font-raleway text-[22px] font-bold text-secondary-500"
@@ -67,10 +109,14 @@ function Achievement() {
             <button
               type="button"
               className="w-14 h-14 border-2 border-secondary-600 rounded-[8px] bg-white grid place-items-center cursor-pointer"
+              onClick={() => slider?.current?.slickPrev()}
             >
               <ArrowLeft size={30} />
             </button>
-            <button className="w-14 h-14 border-2 border-secondary-600 rounded-[8px] bg-white grid place-items-center cursor-pointer">
+            <button
+              className="w-14 h-14 border-2 border-secondary-600 rounded-[8px] bg-white grid place-items-center cursor-pointer"
+              onClick={() => slider?.current?.slickNext()}
+            >
               <ArrowRight size={30} />
             </button>
           </div>

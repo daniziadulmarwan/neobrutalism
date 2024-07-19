@@ -8,6 +8,19 @@ body {
   font-family: "Outfit", sans-serif;
 }
 
+.card {
+  @apply border-2 border-secondary-600 rounded-xl;
+  filter: drop-shadow(6px 6px 2px #1e1e1e);
+}
+
+.title {
+  @apply font-raleway font-bold text-secondary-500;
+}
+
+.subtitle {
+  @apply font-medium text-secondary-400;
+}
+
 .custom-shadow {
   filter: drop-shadow(8px 8px 1px #ffbe99);
 }
@@ -20,8 +33,35 @@ body {
   filter: drop-shadow(4px 4px 2px #1e1e1e);
 }
 
-.slick-slide {
+#testimony-slider .slick-slide {
   padding: 0px 10px 10px 0px;
+}
+
+#achievement-slider .slick-slide {
+  padding: 35px 10px 10px 0px;
+}
+
+#timeline-wrapper::before {
+  content: "";
+  position: absolute;
+  width: 10px;
+  height: 83%;
+  background: #ffbe99;
+  top: 80px;
+  left: 7px;
+  margin-left: -3px;
+  z-index: -1;
+}
+
+#timeline-wrapper::after {
+  content: "";
+  position: absolute;
+  width: 2px;
+  height: 83%;
+  background: #262626;
+  top: 80px;
+  left: 8px;
+  z-index: -1;
 }
 
 select {
@@ -32,7 +72,15 @@ select {
 }
 
 @media (min-width: 1280px) {
-  .slick-slide {
+  #testimony-slider .slick-slide {
     padding: 30px;
+  }
+
+  #achievement-slider .slick-slide {
+    padding: 35px 40px 20px 0px;
+  }
+
+  #achievement-slider .slick-list {
+    margin: 0 -40px;
   }
 }

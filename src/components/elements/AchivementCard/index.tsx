@@ -10,7 +10,7 @@ type Props = {
 const AchivementCard = (props: Props) => {
   return (
     <div className="relative">
-      <div className="border-2 border-secondary-600 bg-white rounded-[10px] xl:rounded-[12px] flex flex-col xl:items-center custom-shadow-black py-[50px] min-h-[402px]">
+      <div className="border-2 border-secondary-600 bg-white rounded-[10px] xl:rounded-[12px] flex flex-col xl:items-center custom-shadow-black px-4 py-10 xl:py-[50px] h-[402px]">
         <h5 className="text-secondary-500 font-raleway text-[22px] xl:text-[28px] font-bold xl:w-[404px] mt-[30px]">
           {props.title}
         </h5>
@@ -21,7 +21,7 @@ const AchivementCard = (props: Props) => {
       {/* Icon */}
       <div
         id="benefit-icon"
-        className="border-2 border-secondary-600 rounded-[12px] p-5 bg-primary-300 grid place-items-center absolute -top-8 left-7"
+        className="border-2 border-secondary-600 rounded-[12px] p-4 xl:p-5 bg-primary-300 grid place-items-center absolute -top-8 left-7"
       >
         {props.icon}
       </div>

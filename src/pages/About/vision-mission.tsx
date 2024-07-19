@@ -4,7 +4,7 @@ import MisionImage from "@/assets/mision.png";
 
 function VisionMission() {
   return (
-    <section id="vision-mision" className="mt-[200px]">
+    <section id="vision-mision" className="mt-20 xl:mt-[200px]">
       {/* Header */}
       <div className="text-center">
         <div className="text-sm xl:text-lg border-2 border-secondary-600 rounded-[8px] bg-white inline-flex px-5 py-[10px]">
@@ -24,8 +24,8 @@ function VisionMission() {
       </div>
 
       {/* Body */}
-      <div className="mt-[100px]">
-        <div className="grid grid-cols-2 gap-[60px]">
+      <div className="mt-[60px] xl:mt-[100px]">
+        <div className="grid grid-cols-1 xl:grid-cols-2 gap-[30px] xl:gap-[60px]">
           <VisionMisionCard
             id={1}
             image={MisionImage}
@@ -35,7 +35,7 @@ function VisionMission() {
           <VisionMisionCard
             id={2}
             image={VisionImage}
-            imgWidth="w-[106px]"
+            imgWidth="w-[66.7px] xl:w-[106px]"
             title="Vision"
             desc="Our vision is to be a beacon of educational excellence, where children are encouraged to explore, discover, and express their unique talents. We aim to foster a generation of lifelong learners equipped with critical thinking, empathy, and a deep appreciation for diversity."
           />

@@ -100,7 +100,7 @@ function Testimony() {
         </div>
       </div>
 
-      <div className="mt-[50px] xl:mt-[100px]">
+      <div id="testimony-slider" className="mt-[50px] xl:mt-[100px]">
         <Slider {...settings} ref={slider}>
           <Testimonial
             id={1}

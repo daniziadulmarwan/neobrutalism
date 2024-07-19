@@ -6,6 +6,7 @@ import Achievement from "./achievement";
 import VisionMission from "./vision-mission";
 import Overview from "./overview";
 import History from "./history";
+import Teachers from "./teachers";
 
 export default function AboutPage() {
   return (
@@ -14,10 +15,11 @@ export default function AboutPage() {
         <Admision />
         <Navbar />
         <Overview />
-        <div className="mx-[162px]">
+        <div className="xl:mx-[162px]">
           <VisionMission />
           <Achievement />
           <History />
+          <Teachers />
         </div>
       </div>
       <Footer />
