@@ -1,5 +1,4 @@
 import AbstractPersegiImage from "@/assets/abstract-persegi.png";
-import Line from "@/components/atoms/Line";
 
 function History() {
   return (
