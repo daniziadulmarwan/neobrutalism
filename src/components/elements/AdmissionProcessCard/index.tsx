@@ -39,7 +39,7 @@ const AdmissionProcessCard = (props: Props) => {
 
       {/* Mobile Version Vertical Line */}
       {props.last !== true ? (
-        <div className="flex flex-col items-center">
+        <div className="flex flex-col items-center xl:hidden">
           <VerticalLine />
         </div>
       ) : (

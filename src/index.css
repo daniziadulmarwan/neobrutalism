@@ -45,10 +45,10 @@ body {
   content: "";
   position: absolute;
   width: 10px;
-  height: 83%;
+  height: 77%;
   background: #ffbe99;
-  top: 80px;
-  left: 7px;
+  top: 45px;
+  left: 23px;
   margin-left: -3px;
   z-index: -1;
 }
@@ -57,10 +57,10 @@ body {
   content: "";
   position: absolute;
   width: 2px;
-  height: 83%;
+  height: 77%;
   background: #262626;
-  top: 80px;
-  left: 8px;
+  top: 45px;
+  left: 24px;
   z-index: -1;
 }
 
@@ -82,5 +82,28 @@ select {
 
   #achievement-slider .slick-list {
     margin: 0 -40px;
+  }
+
+  #timeline-wrapper::before {
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 83%;
+    background: #ffbe99;
+    top: 80px;
+    left: 7px;
+    margin-left: -3px;
+    z-index: -1;
+  }
+
+  #timeline-wrapper::after {
+    content: "";
+    position: absolute;
+    width: 2px;
+    height: 83%;
+    background: #262626;
+    top: 80px;
+    left: 8px;
+    z-index: -1;
   }
 }

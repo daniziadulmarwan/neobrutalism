@@ -3,18 +3,18 @@ import TeacherImage from "@/assets/teacher.png";
 
 function Teachers() {
   return (
-    <section id="teachers" className="mt-10 xl:mt-[200px]">
+    <section id="teachers" className="mt-20 xl:mt-[200px]">
       {/* Header */}
       <div className="text-center">
         <div className="text-sm xl:text-lg border-2 border-secondary-600 rounded-[8px] bg-white inline-flex px-5 py-[10px]">
           Our Teachers With Experties
         </div>
 
-        <h3 className="mt-5 font-raleway font-bold text-[38px] xl:text-[58px]">
+        <h3 className="mt-[10px] xl:mt-5 font-raleway font-bold text-[38px] xl:text-[58px]">
           Our Team Members
         </h3>
         <div className="flex justify-center">
-          <p className="mt-5 font-medium text-base xl:text-xl w-[992px] text-secondary-400">
+          <p className="mt-[10px] xl:mt-5 font-medium text-base xl:text-xl w-[992px] text-secondary-400">
             At Little Learners Academy, our teaching team is the heart of our
             educational journey. We take great pride in employing highly
             qualified and passionate educators who possess a deep understanding
@@ -26,8 +26,8 @@ function Teachers() {
       </div>
 
       {/* Body */}
-      <div className="mt-[100px]">
-        <div className="grid grid-cols-2 gap-[50px]">
+      <div className="mt-[50px] xl:mt-[100px]">
+        <div className="grid grid-cols-1 xl:grid-cols-2 gap-10 xl:gap-[50px]">
           {[1, 2, 3, 4, 5, 6].map((i) => (
             <TeacherCard
               key={i}
