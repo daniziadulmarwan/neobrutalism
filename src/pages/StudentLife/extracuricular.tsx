@@ -1,4 +1,3 @@
-import Benefit from "@/components/elements/Benefit";
 import ExtracuricularCard from "@/components/elements/ExtraculicularCard";
 import {
   ChefHat,

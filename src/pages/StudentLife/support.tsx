@@ -1,4 +1,3 @@
-import Benefit from "@/components/elements/Benefit";
 import SupportCard from "@/components/elements/SupportCard";
 import {
   BookOpenText,
