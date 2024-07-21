@@ -64,12 +64,12 @@ body {
   z-index: -1;
 }
 
-/* #contact-form select {
+select {
   -webkit-appearance: none;
   -moz-appearance: none;
   text-indent: 1px;
   text-overflow: "";
-} */
+}
 
 @media (min-width: 1280px) {
   #testimony-slider .slick-slide {
