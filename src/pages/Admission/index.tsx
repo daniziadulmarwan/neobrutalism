@@ -7,17 +7,23 @@ import Structure from "./structure";
 
 export default function AdmissionPage() {
   return (
-    <main className="w-screen px-4 xl:px-0">
-      <div className="xl:mx-[50px]">
-        <Admision />
-        <Navbar />
-        <Overview />
-        <div className="xl:mx-[162px]">
-          <Process />
-          <Structure />
+    <main className="w-screen">
+      <div className="px-4 xl:px-0">
+        <div className="xl:mx-[50px]">
+          <Admision />
+          <Navbar />
+          <Overview />
+          <div className="xl:mx-[162px]">
+            <Process />
+          </div>
         </div>
       </div>
-      <Footer />
+      <div className="xl:mx-[162px]">
+        <Structure />
+      </div>
+      <div className="px-4 xl:px-0">
+        <Footer />
+      </div>
     </main>
   );
 }
