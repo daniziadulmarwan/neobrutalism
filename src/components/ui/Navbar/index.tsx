@@ -1,5 +1,5 @@
 import Brand from "@/assets/brand.png";
-import NavbarMobile from "@/components/ui/navbar-mobile";
+import NavbarMobile from "@/components/ui/NavbarMobile";
 import { TextAlignRight } from "@phosphor-icons/react";
 import { useState } from "react";
 import { useLocation } from "react-router-dom";

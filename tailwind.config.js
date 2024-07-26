@@ -25,6 +25,12 @@ export default {
       fontFamily: {
         raleway: "Raleway",
       },
+      spacing: {
+        13: "50px",
+        13.5: "60px",
+        15: "100px",
+        17: "200px",
+      },
     },
   },
   plugins: [require("preline/plugin")],

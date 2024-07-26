@@ -1,5 +1,5 @@
-import Admision from "@/components/elements/Admision";
-import Navbar from "@/components/elements/Navbar";
+import Admision from "@/components/ui/Admision";
+import Navbar from "@/components/ui/Navbar";
 import Overview from "./admission";
 import Process from "./process";
 import Footer from "@/components/ui/Footer";

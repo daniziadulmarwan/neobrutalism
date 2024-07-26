@@ -1,5 +1,5 @@
-import Admision from "@/components/elements/Admision";
-import Navbar from "@/components/elements/Navbar";
+import Admision from "@/components/ui/Admision";
+import Navbar from "@/components/ui/Navbar";
 import Footer from "@/components/ui/Footer";
 import Enriching from "./enriching";
 import Extracuricular from "./extracuricular";
