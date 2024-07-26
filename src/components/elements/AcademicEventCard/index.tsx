@@ -5,10 +5,10 @@ type Props = {
   desc: string;
 };
 
-const EventCard = (props: Props) => {
+const AcademicEventCard = (props: Props) => {
   return (
     <div className="card bg-white p-[30px] xl:p-13 relative">
-      <div className="border-y-2 border-secondary-600 bg-primary-200 h-[93px] absolute inset-x-0 top-20 xl:top-36 -z-10"></div>
+      <div className="border-x-2 border-b-2 rounded-br-xl rounded-bl-xl border-secondary-600 bg-primary-200 w-[125px] absolute inset-y-0 -z-10 h-[384px] left-44"></div>
       <div className="flex flex-col items-center">
         <div className="w-full xl:w-[398.67px] h-[227px] xl:h-[304px] border-2 border-secondary-600 rounded-xl overflow-hidden">
           <img
@@ -28,4 +28,4 @@ const EventCard = (props: Props) => {
   );
 };
 
-export default EventCard;
+export default AcademicEventCard;

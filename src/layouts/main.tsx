@@ -4,7 +4,7 @@ import Navbar from "@/components/ui/Navbar";
 import { ReactNode } from "react";
 
 type Props = {
-  children: ReactNode;
+  children?: ReactNode;
 };
 
 function MainLayout(props: Props) {

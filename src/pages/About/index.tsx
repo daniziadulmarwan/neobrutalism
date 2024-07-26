@@ -5,7 +5,7 @@ import Teachers from "./teachers";
 import MainLayout from "@/layouts/main";
 import Overview from "./overview";
 
-export default function AboutPage() {
+function AboutPage() {
   return (
     <MainLayout>
       <div id="overview" className="xl:mx-13">
@@ -20,3 +20,5 @@ export default function AboutPage() {
     </MainLayout>
   );
 }
+
+export default AboutPage;
