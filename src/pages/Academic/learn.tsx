@@ -1,7 +1,5 @@
 import AcademicEventCard from "@/components/elements/AcademicEventCard";
-import EventCard from "@/components/elements/EventCard";
 import { AcademicLearnType, learns } from "@/datas/academic-data";
-import { events, EventType } from "@/datas/event-data";
 
 function Learn() {
   return (
