@@ -41,6 +41,16 @@ body {
   padding: 35px 10px 10px 0px;
 }
 
+/* Start: Carousel Academic Gallery */
+#academic-gallery-image-carousel .slick-slide {
+  padding: 0px 20px 0px 20px;
+}
+
+#academic-gallery-image-carousel .slick-list {
+  margin: 0 -20px;
+}
+/* End: Carousel Academic Gallery */
+
 #timeline-wrapper::before {
   content: "";
   position: absolute;

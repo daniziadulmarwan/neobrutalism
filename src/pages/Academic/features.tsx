@@ -68,7 +68,7 @@ function Features() {
         </div>
       </div>
 
-      <div className="grid grid-cols-1 xl:grid-cols-3 gap-x-0 xl:gap-x-10 gap-y-20 xl:gap-y-20 mt-[50px] xl:mt-[100px]">
+      <div className="grid grid-cols-1 xl:grid-cols-3 gap-x-0 xl:gap-x-10 gap-y-20 xl:gap-y-20 mt-13 xl:mt-15">
         {features.map((feature: AcademicFeatureType) => (
           <ExtracuricularCard
             key={feature.id}
