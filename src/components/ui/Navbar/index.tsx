@@ -15,7 +15,7 @@ const Navbar = () => {
           id="brand"
           className="bg-primary-600 h-full border-r-2 border-[#262626] flex items-center"
         >
-          <a href="#" className="flex items-center px-5 xl:px-6 gap-3">
+          <a href="/" className="flex items-center px-5 xl:px-6 gap-3">
             <img
               src={Brand}
               alt="brand"

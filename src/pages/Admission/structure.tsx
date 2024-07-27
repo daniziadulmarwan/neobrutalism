@@ -23,7 +23,7 @@ function Structure() {
       </div>
 
       {/* Body */}
-      <div className="mt-[60px] xl:mt-[100px] w-screen">
+      <div className="mt-[60px] xl:mt-[100px] w-screen xl:w-full">
         {/* Fee Tables */}
         <div className="my-10 border-2 border-secondary-600 bg-white rounded-xl w-full xl:w-auto custom-shadow-black overflow-auto">
           <div className="flex flex-col py-5 xl:py-[60px] px-0 xl:px-[60px]">
