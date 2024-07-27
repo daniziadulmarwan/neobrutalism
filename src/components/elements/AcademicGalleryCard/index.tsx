@@ -52,13 +52,13 @@ const AcademicGalleryCard = (props: Props) => {
 
   return (
     <div className="relative">
-      <div className="border-2 border-secondary-600 custom-shadow-black rounded-xl bg-white h-[414px]"></div>
-      <div className="absolute inset-x-0 mx-13 -top-40 overflow-hidden">
+      <div className="border-2 border-secondary-600 custom-shadow-black rounded-xl bg-white h-[436px] xl:h-[414px]"></div>
+      <div className="absolute inset-x-0 mx-4 xl:mx-13 -top-28 xl:-top-40 overflow-hidden">
         {props.images?.length ? (
           <div id="academic-gallery-image-carousel">
             <Slider {...settings} ref={slider}>
               {props.images?.map((img) => (
-                <div className="border-2 border-secondary-600 rounded-xl w-[344px] h-[304px] overflow-hidden">
+                <div className="border-2 border-secondary-600 rounded-xl w-[298px] xl:w-[344px] h-[203px] xl:h-[304px] overflow-hidden">
                   <img
                     src={img}
                     alt="classroom-image"
@@ -80,12 +80,12 @@ const AcademicGalleryCard = (props: Props) => {
           </div>
         )}
 
-        <div className="mt-[41px]">
-          <div className="flex justify-between items-center">
-            <h5 className="text-[40px] font-raleway font-bold text-secondary-500">
+        <div className="mt-[34px] xl:mt-[41px]">
+          <div className="flex flex-col gap-5 xl:gap-0 xl:flex-row justify-between items-center">
+            <h5 className="text-[28px] xl:text-[40px] font-raleway font-bold text-secondary-500 order-last xl:order-none">
               {props.title}
             </h5>
-            <div className="flex gap-5 items-center">
+            <div className="flex gap-4 xl:gap-5 items-center">
               <button
                 type="button"
                 className="w-12 xl:w-14 h-12 xl:h-14 border-2 border-secondary-600 rounded-[8px] bg-white grid place-items-center cursor-pointer"
@@ -102,8 +102,8 @@ const AcademicGalleryCard = (props: Props) => {
             </div>
           </div>
 
-          <div className="mt-10">
-            <p className="text-[22px] font-medium text-[#4C4C4D]">
+          <div className="mt-5 xl:mt-10 text-center">
+            <p className="text-lg xl:text-[22px] font-medium text-[#4C4C4D]">
               {props.desc}
             </p>
           </div>

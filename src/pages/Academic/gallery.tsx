@@ -40,37 +40,35 @@ function Gallery() {
       </div>
 
       {/* Start: Gallery */}
-      <div className="mt-15">
+      <div className="mt-13 xl:mt-15">
         {/* Start: Tabs */}
-        <nav
-          className="flex gap-x-[15px] justify-center"
-          aria-orientation="horizontal"
-        >
-          <button
-            type="button"
-            className="border-2 border-secondary-600 rounded-lg bg-primary-200 py-[14px] px-5 text-xl font-semibold text-secondary-500"
-          >
-            All
-          </button>
-          <button
-            type="button"
-            className="border-2 border-secondary-600 rounded-lg bg-white py-[14px] px-5 text-xl font-semibold text-secondary-500"
-          >
-            Classrooms
-          </button>
-          <button
-            type="button"
-            className="border-2 border-secondary-600 rounded-lg bg-white py-[14px] px-5 text-xl font-semibold text-secondary-500"
-          >
-            Library
-          </button>
-          <button
-            type="button"
-            className="border-2 border-secondary-600 rounded-lg bg-white py-[14px] px-5 text-xl font-semibold text-secondary-500"
-          >
-            Science Lab
-          </button>
-          <button
+        <div className="w-screen overflow-auto">
+          <nav className="flex gap-[10px] xl:gap-x-[15px] justify-center">
+            <button
+              type="button"
+              className="border-2 border-secondary-600 rounded-lg bg-primary-200 py-[10px] xl:py-[14px] px-4 xl:px-5 text-base xl:text-xl font-semibold text-secondary-500 inline-block"
+            >
+              All
+            </button>
+            <button
+              type="button"
+              className="border-2 border-secondary-600 rounded-lg bg-white py-[10px] xl:py-[14px] px-4 xl:px-5 text-base xl:text-xl font-semibold text-secondary-500 inline-block"
+            >
+              Classrooms
+            </button>
+            <button
+              type="button"
+              className="border-2 border-secondary-600 rounded-lg bg-white py-[10px] xl:py-[14px] px-4 xl:px-5 text-base xl:text-xl font-semibold text-secondary-500 inline-block"
+            >
+              Library
+            </button>
+            <button
+              type="button"
+              className="border-2 border-secondary-600 rounded-lg bg-white py-[10px] xl:py-[14px] px-4 xl:px-5 text-base xl:text-xl font-semibold text-secondary-500 inline-block"
+            >
+              Science Lab
+            </button>
+            {/* <button
             type="button"
             className="border-2 border-secondary-600 rounded-lg bg-white py-[14px] px-5 text-xl font-semibold text-secondary-500"
           >
@@ -81,32 +79,29 @@ function Gallery() {
             className="border-2 border-secondary-600 rounded-lg bg-white py-[14px] px-5 text-xl font-semibold text-secondary-500"
           >
             Garden and Nature Area
-          </button>
-        </nav>
-        {/* End: Tabs */}
-
-        {/* Start: Body */}
-        <div className="mt-[320px] flex flex-col gap-60">
-          <AcademicGalleryCard
-            id={1}
-            images={classrooms}
-            title="Classrooms"
-            desc="Our well-equipped classrooms are designed to provide a nurturing
-              and stimulating learning environment. Each classroom is
-              thoughtfully arranged to inspire creativity, curiosity, and
-              engagement."
-          />
-          <AcademicGalleryCard
-            id={2}
-            images={libraries}
-            title="Library"
-            desc="Our expansive library is a treasure trove of books, fostering a love for reading and supporting students' literacy development."
-          />
-
-          <AcademicGalleryCard />
+          </button> */}
+          </nav>
         </div>
-        {/* End: Body */}
+
+        {/* End: Tabs */}
       </div>
+
+      {/* Start: Body */}
+      <div className="mt-[220px] xl:mt-[320px] flex flex-col gap-60">
+        <AcademicGalleryCard
+          id={1}
+          images={classrooms}
+          title="Classrooms"
+          desc="Our well-equipped classrooms are designed to provide a nurturing and stimulating learning environment. Each classroom is thoughtfully arranged to inspire."
+        />
+        <AcademicGalleryCard
+          id={2}
+          images={libraries}
+          title="Library"
+          desc="Our expansive library is a treasure trove of books, fostering a love for reading and supporting students' literacy development."
+        />
+      </div>
+      {/* End: Body */}
     </section>
   );
 }
