@@ -6,7 +6,10 @@ import "slick-carousel/slick/slick-theme.css";
 import { useRef } from "react";
 
 type Props = {
+  id?: number;
   images?: string[];
+  title?: string;
+  desc?: string;
 };
 
 const AcademicGalleryCard = (props: Props) => {
@@ -80,7 +83,7 @@ const AcademicGalleryCard = (props: Props) => {
         <div className="mt-[41px]">
           <div className="flex justify-between items-center">
             <h5 className="text-[40px] font-raleway font-bold text-secondary-500">
-              Classrooms
+              {props.title}
             </h5>
             <div className="flex gap-5 items-center">
               <button
@@ -101,10 +104,7 @@ const AcademicGalleryCard = (props: Props) => {
 
           <div className="mt-10">
             <p className="text-[22px] font-medium text-[#4C4C4D]">
-              Our well-equipped classrooms are designed to provide a nurturing
-              and stimulating learning environment. Each classroom is
-              thoughtfully arranged to inspire creativity, curiosity, and
-              engagement.
+              {props.desc}
             </p>
           </div>
         </div>

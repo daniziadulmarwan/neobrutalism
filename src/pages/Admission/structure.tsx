@@ -23,9 +23,9 @@ function Structure() {
       </div>
 
       {/* Body */}
-      <div className="mt-[60px] xl:mt-[100px]">
+      <div className="mt-[60px] xl:mt-[100px] w-screen">
         {/* Fee Tables */}
-        <div className="ml-4 xl:ml-0 my-10 border-2 border-secondary-600 bg-white rounded-xl w-full xl:w-auto custom-shadow-black overflow-auto">
+        <div className="my-10 border-2 border-secondary-600 bg-white rounded-xl w-full xl:w-auto custom-shadow-black overflow-auto">
           <div className="flex flex-col py-5 xl:py-[60px] px-0 xl:px-[60px]">
             <div className="xl:-m-1.5 overflow-x-auto">
               <div className="pl-5 pr-8 xl:p-1.5 min-w-full inline-block align-middle">
@@ -122,7 +122,7 @@ function Structure() {
 
         {/* Additional Tables */}
         {/* Fee Tables */}
-        <div className="ml-4 xl:ml-0 my-10 border-2 border-secondary-600 bg-white rounded-xl w-full xl:w-auto custom-shadow-black overflow-auto">
+        <div className="my-10 border-2 border-secondary-600 bg-white rounded-xl w-full xl:w-auto custom-shadow-black overflow-auto">
           <div className="flex flex-col py-5 xl:py-[60px] px-0 xl:px-[60px]">
             <div className="xl:-m-1.5 overflow-x-auto">
               <div className="pl-5 pr-8 xl:p-1.5 min-w-full inline-block align-middle">
