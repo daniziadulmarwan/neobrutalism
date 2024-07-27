@@ -102,7 +102,7 @@ const AcademicGalleryCard = (props: Props) => {
             </div>
           </div>
 
-          <div className="mt-5 xl:mt-10 text-center">
+          <div className="mt-5 xl:mt-10 text-center xl:text-left">
             <p className="text-lg xl:text-[22px] font-medium text-[#4C4C4D]">
               {props.desc}
             </p>

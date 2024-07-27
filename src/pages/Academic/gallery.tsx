@@ -42,47 +42,44 @@ function Gallery() {
       {/* Start: Gallery */}
       <div className="mt-13 xl:mt-15">
         {/* Start: Tabs */}
-        <div className="w-screen overflow-auto">
-          <nav className="flex gap-[10px] xl:gap-x-[15px] justify-center">
-            <button
-              type="button"
-              className="border-2 border-secondary-600 rounded-lg bg-primary-200 py-[10px] xl:py-[14px] px-4 xl:px-5 text-base xl:text-xl font-semibold text-secondary-500 inline-block"
-            >
-              All
-            </button>
-            <button
-              type="button"
-              className="border-2 border-secondary-600 rounded-lg bg-white py-[10px] xl:py-[14px] px-4 xl:px-5 text-base xl:text-xl font-semibold text-secondary-500 inline-block"
-            >
-              Classrooms
-            </button>
-            <button
-              type="button"
-              className="border-2 border-secondary-600 rounded-lg bg-white py-[10px] xl:py-[14px] px-4 xl:px-5 text-base xl:text-xl font-semibold text-secondary-500 inline-block"
-            >
-              Library
-            </button>
-            <button
-              type="button"
-              className="border-2 border-secondary-600 rounded-lg bg-white py-[10px] xl:py-[14px] px-4 xl:px-5 text-base xl:text-xl font-semibold text-secondary-500 inline-block"
-            >
-              Science Lab
-            </button>
-            {/* <button
+        <nav className="flex gap-[10px] xl:gap-x-[15px] justify-center">
+          <button
             type="button"
-            className="border-2 border-secondary-600 rounded-lg bg-white py-[14px] px-5 text-xl font-semibold text-secondary-500"
+            className="border-2 border-secondary-600 rounded-lg bg-primary-200 py-[10px] xl:py-[14px] px-4 xl:px-5 text-base xl:text-xl font-semibold text-secondary-500 inline-block"
+          >
+            All
+          </button>
+          <button
+            type="button"
+            className="border-2 border-secondary-600 rounded-lg bg-white py-[10px] xl:py-[14px] px-4 xl:px-5 text-base xl:text-xl font-semibold text-secondary-500 inline-block"
+          >
+            Classrooms
+          </button>
+          <button
+            type="button"
+            className="border-2 border-secondary-600 rounded-lg bg-white py-[10px] xl:py-[14px] px-4 xl:px-5 text-base xl:text-xl font-semibold text-secondary-500 inline-block"
+          >
+            Library
+          </button>
+          <button
+            type="button"
+            className="border-2 border-secondary-600 rounded-lg bg-white py-[10px] xl:py-[14px] px-4 xl:px-5 text-base xl:text-xl font-semibold text-secondary-500 inline-block"
+          >
+            Science Lab
+          </button>
+          <button
+            type="button"
+            className="border-2 border-secondary-600 rounded-lg bg-white py-[10px] xl:py-[14px] px-4 xl:px-5 text-base xl:text-xl font-semibold text-secondary-500 inline-block"
           >
             Computer Lab
           </button>
           <button
             type="button"
-            className="border-2 border-secondary-600 rounded-lg bg-white py-[14px] px-5 text-xl font-semibold text-secondary-500"
+            className="border-2 border-secondary-600 rounded-lg bg-white py-[10px] xl:py-[14px] px-4 xl:px-5 text-base xl:text-xl font-semibold text-secondary-500 inline-block"
           >
             Garden and Nature Area
-          </button> */}
-          </nav>
-        </div>
-
+          </button>
+        </nav>
         {/* End: Tabs */}
       </div>
 
