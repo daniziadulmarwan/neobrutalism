@@ -9,6 +9,7 @@ import LibraryImage1 from "@/assets/academic/gallery-library-1.jpg";
 import LibraryImage2 from "@/assets/academic/gallery-library-2.jpg";
 import LibraryImage3 from "@/assets/academic/gallery-library-3.jpg";
 import LibraryImage4 from "@/assets/academic/gallery-library-4.jpg";
+import { useSearchParams } from "react-router-dom";
 
 const classrooms = [
   ClassroomImage1,
@@ -20,6 +21,13 @@ const classrooms = [
 const libraries = [LibraryImage1, LibraryImage2, LibraryImage3, LibraryImage4];
 
 function Gallery() {
+  const [params] = useSearchParams();
+  console.log(params.get("cat"));
+
+  const handleFilter = (value: number) => {
+    console.log(value);
+  };
+
   return (
     <section id="academic-gallery" className="mt-20 xl:mt-17">
       <div className="text-center">
@@ -44,6 +52,7 @@ function Gallery() {
         {/* Start: Tabs */}
         <nav className="flex gap-[10px] xl:gap-x-[15px] justify-center">
           <button
+            onClick={() => handleFilter(1)}
             type="button"
             className="border-2 border-secondary-600 rounded-lg bg-primary-200 py-[10px] xl:py-[14px] px-4 xl:px-5 text-base xl:text-xl font-semibold text-secondary-500 inline-block"
           >

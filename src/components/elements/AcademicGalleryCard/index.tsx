@@ -57,8 +57,11 @@ const AcademicGalleryCard = (props: Props) => {
         {props.images?.length ? (
           <div id="academic-gallery-image-carousel">
             <Slider {...settings} ref={slider}>
-              {props.images?.map((img) => (
-                <div className="border-2 border-secondary-600 rounded-xl w-[298px] xl:w-[344px] h-[203px] xl:h-[304px] overflow-hidden">
+              {props.images?.map((img, index) => (
+                <div
+                  key={index}
+                  className="border-2 border-secondary-600 rounded-xl w-[298px] xl:w-[344px] h-[203px] xl:h-[304px] overflow-hidden"
+                >
                   <img
                     src={img}
                     alt="classroom-image"
